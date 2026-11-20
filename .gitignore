@@ -3,8 +3,5 @@ Thumbs.db
 *.aux
 *.log
 *.out
-*.fls
-*.fdb_latexmk
-*.synctex*
 __pycache__/
 slprj/
