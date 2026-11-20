@@ -1,0 +1,41 @@
+=== PARAMETRES DERIVES DU MOTEUR ===
+sigma = 0.289838 | Delta = 1.543650e-03 H^2 | Ts = 0.1986 s | Tr = 0.0453 s
+Ns = 1500.0 tr/min | Ws_mec = 157.0796 rad/s | ws = 314.1593 rad/s
+Ce_dem_stat = 7.47 Nm | Ce_decrochage_stat = 16.00 Nm (a N = 1136.8 tr/min)
+
+=== MANIPULATION I : DEMARRAGE DIRECT A VIDE (3 REPERES) ===
+t_dem_95 = 1.223 s | Ce_max = 30.17 Nm | Ce_min = -16.26 Nm | Ce_fin = 1.643 Nm
+N_fin = 1481.95 tr/min | Omega_fin = 155.19 rad/s | s_fin = 1.20 % | f_gliss = 0.602 Hz
+Is_max_pic_3ph = 22.36 A | isa_max (cos) = 16.05 A | Is_eff_max = 16.61 A | Is_eff_fin = 3.27 A (rapport 5.08)
+Ir_eff_max = 37.75 A | Ir_eff_fin = 1.38 A | ira_max = 41.77 A
+Synchronisme DC final: isd=0.769 A, isq=-5.613 A, ird=-2.391 A, irq=0.080 A
+Ecart max Stator-Rotor : dCe=2.08e-04 Nm, dN=7.83e-03 tr/min, disa=9.02e-05 A
+Ecart max Stator-Sync  : dCe=3.13e-03 Nm, dN=7.84e-03 tr/min, disa=6.90e-04 A
+
+=== MANIPULATION I (FACULTATIF) : FONCTIONNEMENT EN CHARGE (t=2s) ===
+Cr= 0 Nm | N_fin=1481.95 tr/min | s= 1.20 % | Ce_fin= 1.64 Nm | Is_eff= 3.27 A | Ir_eff= 1.38 A | Pmec=  255.0 W
+Cr= 3 Nm | N_fin=1447.94 tr/min | s= 3.47 % | Ce_fin= 4.62 Nm | Is_eff= 3.55 A | Ir_eff= 3.93 A | Pmec=  700.6 W
+Cr= 6 Nm | N_fin=1410.39 tr/min | s= 5.97 % | Ce_fin= 7.60 Nm | Is_eff= 4.08 A | Ir_eff= 6.61 A | Pmec= 1121.8 W
+Cr= 9 Nm | N_fin=1365.40 tr/min | s= 8.97 % | Ce_fin=10.57 Nm | Is_eff= 4.86 A | Ir_eff= 9.56 A | Pmec= 1510.6 W
+Cr=12 Nm | N_fin=1302.14 tr/min | s=13.19 % | Ce_fin=13.52 Nm | Is_eff= 5.94 A | Ir_eff=13.12 A | Pmec= 1843.9 W
+Surcharge: Cr=15 Nm -> N_fin=1043.57 tr/min | Cr=16 Nm -> N_fin=-286.04 tr/min (decrochage)
+
+=== MANIPULATION II-I : GRADATEUR ANGLE DE PHASE ===
+alpha=  0 deg | N_fin=1481.94 tr/min | t95=1.223 s | Vsa_rms=220.0 V | isa_max=23.50 A | Is_eff_max=16.61 A | Ce_max=30.21 Nm | THD_i=  0.0 %
+alpha= 80 deg | N_fin=1481.94 tr/min | t95=1.864 s | Vsa_rms=220.0 V | isa_max=14.23 A | Is_eff_max=10.17 A | Ce_max=10.61 Nm | THD_i=  0.0 %
+alpha= 90 deg | N_fin=1475.71 tr/min | t95=3.570 s | Vsa_rms=198.6 V | isa_max=10.62 A | Is_eff_max= 7.97 A | Ce_max= 6.00 Nm | THD_i= 10.7 %
+alpha= 95 deg | N_fin=1150.77 tr/min | t95=4.268 s | Vsa_rms=142.3 V | isa_max= 8.67 A | Is_eff_max= 6.80 A | Ce_max= 4.23 Nm | THD_i= 20.8 %
+alpha=100 deg | N_fin= 560.01 tr/min | t95=4.279 s | Vsa_rms=144.5 V | isa_max= 6.92 A | Is_eff_max= 5.65 A | Ce_max= 2.74 Nm | THD_i= 19.8 %
+Rampe 110->70 (2s) | N_fin=1481.94 tr/min | t95=2.427 s | isa_max=13.26 A | Is_eff_max= 9.54 A | Ce_max=12.62 Nm | THD_i=  0.0 %
+
+=== MANIPULATION II-II : GRADATEUR TRAIN D ONDES ===
+Train 8/8 (beta=1.000) | N_moy=1481.94 tr/min | dN_pp=  0.0 tr/min | isa_max=23.50 A | Is_eff_max=16.61 A | Ce_max=30.21 Nm | Ce_ss=[  1.64,   1.64] | THD_i=  0.0 %
+Train 7/8 (beta=0.875) | N_moy=1473.73 tr/min | dN_pp= 11.6 tr/min | isa_max=28.26 A | Is_eff_max=19.99 A | Ce_max=30.21 Nm | Ce_ss=[-12.20,  11.62] | THD_i= 77.5 %
+Train 6/8 (beta=0.750) | N_moy=1460.42 tr/min | dN_pp= 22.4 tr/min | isa_max=27.34 A | Is_eff_max=19.66 A | Ce_max=30.21 Nm | Ce_ss=[-16.12,  15.08] | THD_i=114.6 %
+Train 5/8 (beta=0.625) | N_moy=1252.79 tr/min | dN_pp=555.9 tr/min | isa_max=26.10 A | Is_eff_max=18.77 A | Ce_max=30.21 Nm | Ce_ss=[-26.87,  24.89] | THD_i=123.1 %
+Train 4/8 (beta=0.500) | N_moy= 715.97 tr/min | dN_pp=370.7 tr/min | isa_max=25.44 A | Is_eff_max=18.29 A | Ce_max=30.21 Nm | Ce_ss=[-10.07,  16.99] | THD_i= 93.2 %
+
+=== MANIPULATION II-3 (FACULTATIF) : ONDULEUR ===
+Pleine onde 180 (50Hz) | N_fin=1481.93 tr/min | Ce_max=34.10 Nm | dCe_pp=1.368 Nm | std_Ce=0.462 Nm | isa_max=25.03 A | THD_i= 15.9 %
+MLI SPWM 2kHz  (50Hz) | N_fin=1481.79 tr/min | Ce_max=29.80 Nm | dCe_pp=1.803 Nm | std_Ce=0.327 Nm | isa_max=23.49 A | THD_i=  3.8 %
+MLI V/f=cte | N(25Hz)=737.62 tr/min | N(37.5Hz)=1109.81 tr/min | N(50Hz)=1481.95 tr/min | Is_eff_max= 7.38 A | Ce_max=17.22 Nm
